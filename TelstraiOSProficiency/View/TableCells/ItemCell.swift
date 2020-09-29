@@ -57,25 +57,15 @@ class ItemCell: UITableViewCell {
    /// Function to display data on cell
    /// - Parameter record: Fact record passed from view controller
    func prepareCellForDisplay(record: Item) {
-     itemTitle.text = record.title ?? ""
-     itemDescription.text = record.rowDescription ?? " "
-     itemImageView.sd_setImage(with: URL(string: record.imageHref ?? ""),
-                               placeholderImage: UIImage(named: "placeHolderImage"))
+    itemTitle.text = record.title ?? ""
+    itemDescription.text = record.rowDescription ?? " "
+    itemImageView.sd_setImage(with: URL(string: record.imageHref ?? ""),
+                              placeholderImage: UIImage(named: "placeHolderImage"))
    }
 
-  /// Get font size as per device
-  /// - Returns: Font size in CGFloat
-  private func getFontSize() -> CGFloat {
-    if UIDevice.current.userInterfaceIdiom == .pad {
-      return FontSizeEnum.iPadImageWidthHeight.rawValue
-    } else {
-      return FontSizeEnum.iPhoneImageWidthHeight.rawValue
-    }
-  }
-
-  required init?(coder: NSCoder) {
+   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
-  }
+   }
 }
 
 // MARK: - Extension for setting constraints on views

@@ -1,10 +1,5 @@
 import Foundation
 
-enum ItemsError: Error {
-  case noItemsAvailable
-  case inValidData
-}
-
 typealias GetItemsDataCompletionHandler = (Result<ItemModel, ItemsError>) -> Void
 
 struct ItemViewModel {
