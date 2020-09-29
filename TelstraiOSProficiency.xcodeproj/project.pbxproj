@@ -20,6 +20,7 @@
 		1DB34144252376F900DD6B0F /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB34143252376F900DD6B0F /* WebServiceHandler.swift */; };
 		1DB341462523775300DD6B0F /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341452523775300DD6B0F /* NetworkHandler.swift */; };
 		1DB3414925237ABC00DD6B0F /* ItemsDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3414825237ABC00DD6B0F /* ItemsDataParser.swift */; };
+		1DB341562523CAB800DD6B0F /* APIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341552523CAB800DD6B0F /* APIResponse.json */; };
 		3B750901BE83143F3BFCC097 /* Pods_TelstraiOSProficiencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FC8287DD9A80BFFD9C07FE /* Pods_TelstraiOSProficiencyTests.framework */; };
 		F6C9A4FCA1C6D4D3803CAF73 /* Pods_TelstraiOSProficiency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		1DB34143252376F900DD6B0F /* WebServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 		1DB341452523775300DD6B0F /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 		1DB3414825237ABC00DD6B0F /* ItemsDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsDataParser.swift; sourceTree = "<group>"; };
+		1DB341552523CAB800DD6B0F /* APIResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APIResponse.json; sourceTree = "<group>"; };
 		3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelstraiOSProficiency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE9AE5520B5EE1BB4C033BF /* Pods-TelstraiOSProficiencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiencyTests.release.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiencyTests/Pods-TelstraiOSProficiencyTests.release.xcconfig"; sourceTree = "<group>"; };
 		876D1CD055740F9D3D356A21 /* Pods-TelstraiOSProficiency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiency.debug.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		1DB341242523566300DD6B0F /* TelstraiOSProficiencyTests */ = {
 			isa = PBXGroup;
 			children = (
+				1DB341552523CAB800DD6B0F /* APIResponse.json */,
 				1DB341252523566300DD6B0F /* TelstraiOSProficiencyTests.swift */,
 				1DB341272523566300DD6B0F /* Info.plist */,
 			);
@@ -307,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB341562523CAB800DD6B0F /* APIResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
