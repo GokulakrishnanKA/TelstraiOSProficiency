@@ -18,8 +18,8 @@ class ItemsController: UIViewController {
     footerView.backgroundColor = .white
     tableView.tableFooterView = footerView
     tableView.estimatedRowHeight = 200.0
-    tableView.allowsSelection = false
     tableView.rowHeight = UITableView.automaticDimension
+    tableView.allowsSelection = false
     return tableView
   }()
 
@@ -129,9 +129,9 @@ extension ItemsController {
   /// - Returns: Void
   private func addTableViewConstraints() {
     tableView.translatesAutoresizingMaskIntoConstraints = false
-    tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-    tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-    tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-    tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+    tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+    tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+    tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
   }
 }

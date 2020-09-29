@@ -52,18 +52,15 @@ class ItemCell: UITableViewCell {
     setItemImageViewConstraints()
     setItemTitleLabelConstraints()
     setItemDescriptionLabelConstraints()
-
-    // Setting cell min height
-    contentView.heightAnchor.constraint(
-      greaterThanOrEqualToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 108 : 72).isActive = true
-    }
+  }
 
    /// Function to display data on cell
    /// - Parameter record: Fact record passed from view controller
    func prepareCellForDisplay(record: Item) {
      itemTitle.text = record.title ?? ""
      itemDescription.text = record.rowDescription ?? " "
-     itemImageView.sd_setImage(with: URL(string: record.imageHref ?? ""), placeholderImage: UIImage(named: "placeHolderImage"))
+     itemImageView.sd_setImage(with: URL(string: record.imageHref ?? ""),
+                               placeholderImage: UIImage(named: "placeHolderImage"))
    }
 
   /// Get font size as per device
@@ -86,43 +83,34 @@ extension ItemCell {
 
   /// Constraints for itemImageView
   private func setItemImageViewConstraints() {
-
     itemImageView.translatesAutoresizingMaskIntoConstraints = false
-    itemImageView.contentMode = .scaleAspectFit
 
-    let marginGuide = contentView.layoutMarginsGuide
-
-    NSLayoutConstraint.activate([
-        itemImageView.widthAnchor.constraint(
-          equalToConstant: getFontSize()),
-        itemImageView.heightAnchor.constraint(equalToConstant: getFontSize()),
-        itemImageView.topAnchor.constraint(equalTo: marginGuide.topAnchor, constant: -5),
-        itemImageView.leftAnchor.constraint(equalTo: marginGuide.leftAnchor)
-    ])
+    NSLayoutConstraint.init(item: itemImageView, attribute: .leading, relatedBy: .equal,
+                            toItem: self, attribute: .centerX, multiplier: 10/187.5, constant: 0).isActive = true
+    NSLayoutConstraint.init(item: itemImageView, attribute: .bottom, relatedBy: .lessThanOrEqual,
+                            toItem: self, attribute: .bottom, multiplier: 1, constant: -10).isActive = true
+    itemImageView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
+    itemImageView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
+    itemImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
   }
 
   /// Constraints for itemTitle
   private func setItemTitleLabelConstraints() {
-
-    let marginGuide = contentView.layoutMarginsGuide
-
     itemTitle.translatesAutoresizingMaskIntoConstraints = false
-    itemTitle.numberOfLines = 0
+    itemTitle.topAnchor.constraint(equalTo: itemImageView.topAnchor).isActive = true
     itemTitle.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 10).isActive = true
-    itemTitle.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
-    itemTitle.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
+
+    NSLayoutConstraint.init(item: itemTitle, attribute: .trailing, relatedBy: .equal,
+                            toItem: self, attribute: .centerX, multiplier: 365/187.5, constant: 0).isActive = true
   }
 
   /// Constraints for itemDescription
   private func setItemDescriptionLabelConstraints() {
-
-    let marginGuide = contentView.layoutMarginsGuide
-    
     itemDescription.translatesAutoresizingMaskIntoConstraints = false
-    itemDescription.numberOfLines = 0
-    itemDescription.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 10).isActive = true
-    itemDescription.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
-    itemDescription.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-    itemDescription.topAnchor.constraint(equalTo: itemTitle.bottomAnchor).isActive = true
+
+    itemDescription.leadingAnchor.constraint(equalTo: itemTitle.leadingAnchor).isActive = true
+    itemDescription.trailingAnchor.constraint(equalTo: itemTitle.trailingAnchor).isActive = true
+    itemDescription.topAnchor.constraint(equalTo: itemTitle.bottomAnchor, constant: 5.0).isActive = true
+    itemDescription.bottomAnchor.constraint(lessThanOrEqualTo: self.bottomAnchor, constant: -10.0).isActive = true
   }
 }
