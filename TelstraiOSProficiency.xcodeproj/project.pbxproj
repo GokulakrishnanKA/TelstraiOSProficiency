@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1DB3410F2523566100DD6B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3410E2523566100DD6B0F /* AppDelegate.swift */; };
-		1DB341132523566100DD6B0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341122523566100DD6B0F /* ViewController.swift */; };
-		1DB341162523566100DD6B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341142523566100DD6B0F /* Main.storyboard */; };
+		1DB341132523566100DD6B0F /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341122523566100DD6B0F /* ItemsController.swift */; };
 		1DB341182523566300DD6B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341172523566300DD6B0F /* Assets.xcassets */; };
 		1DB3411B2523566300DD6B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341192523566300DD6B0F /* LaunchScreen.storyboard */; };
 		1DB341262523566300DD6B0F /* TelstraiOSProficiencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341252523566300DD6B0F /* TelstraiOSProficiencyTests.swift */; };
+		1DB3413325235C6F00DD6B0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3413225235C6F00DD6B0F /* Constants.swift */; };
+		1DB3413525235F4A00DD6B0F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3413425235F4A00DD6B0F /* ItemCell.swift */; };
+		1DB341372523617E00DD6B0F /* FontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341362523617E00DD6B0F /* FontSize.swift */; };
 		3B750901BE83143F3BFCC097 /* Pods_TelstraiOSProficiencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FC8287DD9A80BFFD9C07FE /* Pods_TelstraiOSProficiencyTests.framework */; };
 		F6C9A4FCA1C6D4D3803CAF73 /* Pods_TelstraiOSProficiency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */; };
 /* End PBXBuildFile section */
@@ -30,14 +32,16 @@
 /* Begin PBXFileReference section */
 		1DB3410B2523566100DD6B0F /* TelstraiOSProficiency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraiOSProficiency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB3410E2523566100DD6B0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DB341122523566100DD6B0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1DB341152523566100DD6B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DB341122523566100DD6B0F /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
 		1DB341172523566300DD6B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB3411A2523566300DD6B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DB3411C2523566300DD6B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB341212523566300DD6B0F /* TelstraiOSProficiencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraiOSProficiencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB341252523566300DD6B0F /* TelstraiOSProficiencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelstraiOSProficiencyTests.swift; sourceTree = "<group>"; };
 		1DB341272523566300DD6B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB3413225235C6F00DD6B0F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DB3413425235F4A00DD6B0F /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		1DB341362523617E00DD6B0F /* FontSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSize.swift; sourceTree = "<group>"; };
 		3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelstraiOSProficiency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE9AE5520B5EE1BB4C033BF /* Pods-TelstraiOSProficiencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiencyTests.release.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiencyTests/Pods-TelstraiOSProficiencyTests.release.xcconfig"; sourceTree = "<group>"; };
 		876D1CD055740F9D3D356A21 /* Pods-TelstraiOSProficiency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiency.debug.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,12 +93,14 @@
 		1DB3410D2523566100DD6B0F /* TelstraiOSProficiency */ = {
 			isa = PBXGroup;
 			children = (
-				1DB3410E2523566100DD6B0F /* AppDelegate.swift */,
-				1DB341122523566100DD6B0F /* ViewController.swift */,
-				1DB341142523566100DD6B0F /* Main.storyboard */,
+				1DB3413A2523690000DD6B0F /* Enumerations */,
+				1DB3413B2523691500DD6B0F /* Utilities */,
+				1DB34138252368DD00DD6B0F /* Table Cells */,
+				1DB34139252368E900DD6B0F /* ViewControllers */,
 				1DB341172523566300DD6B0F /* Assets.xcassets */,
 				1DB341192523566300DD6B0F /* LaunchScreen.storyboard */,
 				1DB3411C2523566300DD6B0F /* Info.plist */,
+				1DB3410E2523566100DD6B0F /* AppDelegate.swift */,
 			);
 			path = TelstraiOSProficiency;
 			sourceTree = "<group>";
@@ -106,6 +112,38 @@
 				1DB341272523566300DD6B0F /* Info.plist */,
 			);
 			path = TelstraiOSProficiencyTests;
+			sourceTree = "<group>";
+		};
+		1DB34138252368DD00DD6B0F /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3413425235F4A00DD6B0F /* ItemCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		1DB34139252368E900DD6B0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DB341122523566100DD6B0F /* ItemsController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1DB3413A2523690000DD6B0F /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				1DB341362523617E00DD6B0F /* FontSize.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		1DB3413B2523691500DD6B0F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3413225235C6F00DD6B0F /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		4727968752AD06A17942190C /* Frameworks */ = {
@@ -215,7 +253,6 @@
 			files = (
 				1DB3411B2523566300DD6B0F /* LaunchScreen.storyboard in Resources */,
 				1DB341182523566300DD6B0F /* Assets.xcassets in Resources */,
-				1DB341162523566100DD6B0F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,8 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB341132523566100DD6B0F /* ViewController.swift in Sources */,
+				1DB341132523566100DD6B0F /* ItemsController.swift in Sources */,
+				1DB341372523617E00DD6B0F /* FontSize.swift in Sources */,
 				1DB3410F2523566100DD6B0F /* AppDelegate.swift in Sources */,
+				1DB3413325235C6F00DD6B0F /* Constants.swift in Sources */,
+				1DB3413525235F4A00DD6B0F /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,14 +378,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1DB341142523566100DD6B0F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DB341152523566100DD6B0F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1DB341192523566300DD6B0F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
