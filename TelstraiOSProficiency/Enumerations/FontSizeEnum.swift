@@ -1,6 +1,6 @@
 import UIKit
 
-enum FontSize: CGFloat {
+enum FontSizeEnum: CGFloat {
     case iPadTitle = 27.0
     case iPhoneTitle = 18.0
     case iPadDescription = 21.0

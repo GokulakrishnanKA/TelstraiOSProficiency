@@ -61,9 +61,9 @@ class ItemCell: UITableViewCell {
   /// - Returns: Font size in CGFloat
   private func getFontSize() -> CGFloat {
     if UIDevice.current.userInterfaceIdiom == .pad {
-      return FontSize.iPadImageWidthHeight.rawValue
+      return FontSizeEnum.iPadImageWidthHeight.rawValue
     } else {
-      return FontSize.iPhoneImageWidthHeight.rawValue
+      return FontSizeEnum.iPhoneImageWidthHeight.rawValue
     }
   }
 
