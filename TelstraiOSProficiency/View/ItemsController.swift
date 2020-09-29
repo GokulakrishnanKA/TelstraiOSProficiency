@@ -1,6 +1,10 @@
 import UIKit
 
 class ItemsController: UIViewController {
+  // MARK: - Properties
+  private var viewModel: ItemViewModel = {
+    return ItemViewModel.init(Constants.apiURL)
+  }()
 
   let tableView: UITableView = {
     let tableView = UITableView()
@@ -14,6 +18,7 @@ class ItemsController: UIViewController {
     footerView.backgroundColor = .white
     tableView.tableFooterView = footerView
     tableView.estimatedRowHeight = 200.0
+    tableView.allowsSelection = false
     tableView.rowHeight = UITableView.automaticDimension
     return tableView
   }()
@@ -33,11 +38,36 @@ class ItemsController: UIViewController {
       view.addSubview(tableView)
 
       configureTableView()
-    }
+      getItems()
+  }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
       super.viewWillTransition(to: size, with: coordinator)
       tableView.reloadData()
+    }
+
+    /// Function to get facts from API. It calls method on viewModel and returns data
+    /// - Returns: Void
+    private func getItems() {
+
+      // Calling viewModel method to get facts data from API
+      viewModel.getItemsFromAPI {[weak self] (result) in
+        switch result {
+        case .failure(.noItemsAvailable):
+          break
+        case .failure(.inValidData):
+          break
+        case .success(let itemsResponse):
+          self?.viewModel.updateItemArray(itemsResponse.rows ?? [])
+          DispatchQueue.main.async {[weak self] in
+            guard let self = self else {
+              return
+            }
+            self.title = itemsResponse.title ?? ""
+            self.tableView.reloadData()
+          }
+        }
+      }
     }
 
     // MARK: - Private Methods
@@ -76,7 +106,7 @@ class ItemsController: UIViewController {
 // MARK: - UITableViewDelegate
 extension ItemsController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return viewModel.itemsArray.count
   }
 }
 
@@ -84,6 +114,8 @@ extension ItemsController: UITableViewDelegate {
 extension ItemsController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier: ItemCell.classIdentifier) as? ItemCell {
+      let item = viewModel.itemsArray[indexPath.row]
+      cell.prepareCellForDisplay(record: item)
       return cell
     }
     return UITableViewCell()

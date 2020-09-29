@@ -1,4 +1,5 @@
 import UIKit
+import SDWebImage
 
 class ItemCell: UITableViewCell {
 
@@ -55,7 +56,15 @@ class ItemCell: UITableViewCell {
     // Setting cell min height
     contentView.heightAnchor.constraint(
       greaterThanOrEqualToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 108 : 72).isActive = true
-  }
+    }
+
+   /// Function to display data on cell
+   /// - Parameter record: Fact record passed from view controller
+   func prepareCellForDisplay(record: Item) {
+     itemTitle.text = record.title ?? ""
+     itemDescription.text = record.rowDescription ?? " "
+     itemImageView.sd_setImage(with: URL(string: record.imageHref ?? ""), placeholderImage: UIImage(named: "placeHolderImage"))
+   }
 
   /// Get font size as per device
   /// - Returns: Font size in CGFloat
@@ -108,6 +117,7 @@ extension ItemCell {
   private func setItemDescriptionLabelConstraints() {
 
     let marginGuide = contentView.layoutMarginsGuide
+    
     itemDescription.translatesAutoresizingMaskIntoConstraints = false
     itemDescription.numberOfLines = 0
     itemDescription.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 10).isActive = true
