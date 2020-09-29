@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		1DB341182523566300DD6B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341172523566300DD6B0F /* Assets.xcassets */; };
 		1DB3411B2523566300DD6B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341192523566300DD6B0F /* LaunchScreen.storyboard */; };
 		1DB341262523566300DD6B0F /* TelstraiOSProficiencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341252523566300DD6B0F /* TelstraiOSProficiencyTests.swift */; };
+		3B750901BE83143F3BFCC097 /* Pods_TelstraiOSProficiencyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FC8287DD9A80BFFD9C07FE /* Pods_TelstraiOSProficiencyTests.framework */; };
+		F6C9A4FCA1C6D4D3803CAF73 /* Pods_TelstraiOSProficiency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,12 @@
 		1DB341212523566300DD6B0F /* TelstraiOSProficiencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraiOSProficiencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB341252523566300DD6B0F /* TelstraiOSProficiencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelstraiOSProficiencyTests.swift; sourceTree = "<group>"; };
 		1DB341272523566300DD6B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelstraiOSProficiency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FE9AE5520B5EE1BB4C033BF /* Pods-TelstraiOSProficiencyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiencyTests.release.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiencyTests/Pods-TelstraiOSProficiencyTests.release.xcconfig"; sourceTree = "<group>"; };
+		876D1CD055740F9D3D356A21 /* Pods-TelstraiOSProficiency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiency.debug.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency.debug.xcconfig"; sourceTree = "<group>"; };
+		B0B9F8588708A59ADDEC4562 /* Pods-TelstraiOSProficiency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiency.release.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency.release.xcconfig"; sourceTree = "<group>"; };
+		E72FD271C95CE52B48D0D194 /* Pods-TelstraiOSProficiencyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelstraiOSProficiencyTests.debug.xcconfig"; path = "Target Support Files/Pods-TelstraiOSProficiencyTests/Pods-TelstraiOSProficiencyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9FC8287DD9A80BFFD9C07FE /* Pods_TelstraiOSProficiencyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelstraiOSProficiencyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6C9A4FCA1C6D4D3803CAF73 /* Pods_TelstraiOSProficiency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B750901BE83143F3BFCC097 /* Pods_TelstraiOSProficiencyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				1DB3410D2523566100DD6B0F /* TelstraiOSProficiency */,
 				1DB341242523566300DD6B0F /* TelstraiOSProficiencyTests */,
 				1DB3410C2523566100DD6B0F /* Products */,
+				4AE8C6432EB24AD323FF86A4 /* Pods */,
+				4727968752AD06A17942190C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = TelstraiOSProficiencyTests;
 			sourceTree = "<group>";
 		};
+		4727968752AD06A17942190C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AD885C0C3CD2F4A67C45615 /* Pods_TelstraiOSProficiency.framework */,
+				F9FC8287DD9A80BFFD9C07FE /* Pods_TelstraiOSProficiencyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AE8C6432EB24AD323FF86A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				876D1CD055740F9D3D356A21 /* Pods-TelstraiOSProficiency.debug.xcconfig */,
+				B0B9F8588708A59ADDEC4562 /* Pods-TelstraiOSProficiency.release.xcconfig */,
+				E72FD271C95CE52B48D0D194 /* Pods-TelstraiOSProficiencyTests.debug.xcconfig */,
+				7FE9AE5520B5EE1BB4C033BF /* Pods-TelstraiOSProficiencyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DB3412A2523566300DD6B0F /* Build configuration list for PBXNativeTarget "TelstraiOSProficiency" */;
 			buildPhases = (
+				D73DEE5837D437A2422F8576 /* [CP] Check Pods Manifest.lock */,
 				1DB341072523566100DD6B0F /* Sources */,
 				1DB341082523566100DD6B0F /* Frameworks */,
 				1DB341092523566100DD6B0F /* Resources */,
+				32A7A424F202E6E1DC94AEFA /* [CP] Embed Pods Frameworks */,
+				1DB341302523583200DD6B0F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DB3412D2523566300DD6B0F /* Build configuration list for PBXNativeTarget "TelstraiOSProficiencyTests" */;
 			buildPhases = (
+				0C112C650E53190F446BF01F /* [CP] Check Pods Manifest.lock */,
 				1DB3411D2523566300DD6B0F /* Sources */,
 				1DB3411E2523566300DD6B0F /* Frameworks */,
 				1DB3411F2523566300DD6B0F /* Resources */,
@@ -191,6 +227,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C112C650E53190F446BF01F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelstraiOSProficiencyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DB341302523583200DD6B0F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		32A7A424F202E6E1DC94AEFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelstraiOSProficiency/Pods-TelstraiOSProficiency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D73DEE5837D437A2422F8576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelstraiOSProficiency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1DB341072523566100DD6B0F /* Sources */ = {
@@ -356,6 +473,7 @@
 		};
 		1DB3412B2523566300DD6B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876D1CD055740F9D3D356A21 /* Pods-TelstraiOSProficiency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +492,7 @@
 		};
 		1DB3412C2523566300DD6B0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0B9F8588708A59ADDEC4562 /* Pods-TelstraiOSProficiency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +511,7 @@
 		};
 		1DB3412E2523566300DD6B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72FD271C95CE52B48D0D194 /* Pods-TelstraiOSProficiencyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +533,7 @@
 		};
 		1DB3412F2523566300DD6B0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FE9AE5520B5EE1BB4C033BF /* Pods-TelstraiOSProficiencyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
