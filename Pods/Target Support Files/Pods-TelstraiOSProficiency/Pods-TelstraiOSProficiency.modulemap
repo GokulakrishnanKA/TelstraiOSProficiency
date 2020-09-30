@@ -1,0 +1,6 @@
+framework module Pods_TelstraiOSProficiency {
+  umbrella header "Pods-TelstraiOSProficiency-umbrella.h"
+
+  export *
+  module * { export * }
+}
