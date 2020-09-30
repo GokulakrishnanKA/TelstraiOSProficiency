@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5AB90C2524A12A0010A954 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5AB90B2524A12A0010A954 /* Extension+UIViewController.swift */; };
 		1DB3410F2523566100DD6B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3410E2523566100DD6B0F /* AppDelegate.swift */; };
 		1DB341132523566100DD6B0F /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB341122523566100DD6B0F /* ItemsController.swift */; };
 		1DB341182523566300DD6B0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB341172523566300DD6B0F /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D5AB90B2524A12A0010A954 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		1DB3410B2523566100DD6B0F /* TelstraiOSProficiency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraiOSProficiency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB3410E2523566100DD6B0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB341122523566100DD6B0F /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5AB90D2524A6320010A954 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D5AB90B2524A12A0010A954 /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1DB341022523566100DD6B0F = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		1DB3410D2523566100DD6B0F /* TelstraiOSProficiency */ = {
 			isa = PBXGroup;
 			children = (
+				1D5AB90D2524A6320010A954 /* Extensions */,
 				1DB34147252379A700DD6B0F /* Parser */,
 				1DB34142252376C500DD6B0F /* WebServices */,
 				1DB3413F25236CED00DD6B0F /* ViewModel */,
@@ -410,6 +421,7 @@
 				1DB3413525235F4A00DD6B0F /* ItemCell.swift in Sources */,
 				1DB3413E25236C9700DD6B0F /* ItemModel.swift in Sources */,
 				1DB34144252376F900DD6B0F /* WebServiceHandler.swift in Sources */,
+				1D5AB90C2524A12A0010A954 /* Extension+UIViewController.swift in Sources */,
 				1DB341462523775300DD6B0F /* NetworkHandler.swift in Sources */,
 				1DB3414925237ABC00DD6B0F /* ItemsDataParser.swift in Sources */,
 			);

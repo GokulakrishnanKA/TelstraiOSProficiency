@@ -49,14 +49,13 @@ class ItemsController: UIViewController {
     /// Function to get facts from API. It calls method on viewModel and returns data
     /// - Returns: Void
     private func getItems() {
-
       // Calling viewModel method to get facts data from API
       viewModel.getItemsFromAPI {[weak self] (result) in
         switch result {
         case .failure(.noItemsAvailable):
-          break
+          UIAlertController.showAlertMessage(withTitle: "Error", withMessage: "No items available.")
         case .failure(.inValidData):
-          break
+          UIAlertController.showAlertMessage(withTitle: "Error", withMessage: "Invalid data.")
         case .success(let itemsResponse):
           self?.viewModel.updateItemArray(itemsResponse.rows ?? [])
           DispatchQueue.main.async {[weak self] in

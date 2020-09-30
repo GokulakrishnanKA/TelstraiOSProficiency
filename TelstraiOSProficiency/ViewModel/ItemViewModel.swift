@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 typealias GetItemsDataCompletionHandler = (Result<ItemModel, ItemsError>) -> Void
 
@@ -35,7 +35,7 @@ struct ItemViewModel {
         }
       }
     } else {
-      print("No internet connectivity available.")
+      UIAlertController.showAlertMessage(withTitle: "Error", withMessage: "Internet connection not available.")
     }
   }
 }
